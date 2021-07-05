@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Rechner</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="#"
+        class="formular"
+        method="get"
+        onsubmit=" return auswertung();"
+      >
+        <div class="heading">
+          <h1>BMI RECHNER</h1>
+        </div>
+        <div class="radio">
+          <input type="radio" name="gender" id="frau" checked="checked" />
+          <label for="frau"> <span></span>Frau </label>
+          <input type="radio" name="gender" id="mann" />
+          <label for="mann"> <span></span>Mann </label>
+        </div>
+        <label>
+          <input type="number" name="gewicht" placeholder="Gewicht" />
+        </label>
+        <label>
+          <input type="number" name="groesse" placeholder="Grose" />
+        </label>
+        <input type="submit" class="submit" value="Berechnen" />
+      </form>
+      <div id="ausgabe"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
